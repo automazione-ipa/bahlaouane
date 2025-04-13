@@ -37,4 +37,4 @@ if(text):
     print(response.json()["choices"][0]["message"]["content"])
 
 else:
-    print("No text was extracted from the PDF.")
+    print("No text was extracted from the text.")
