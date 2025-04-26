@@ -1,15 +1,18 @@
 Descrizione:  
-Vorrei automatizzare l’attività ripetitiva di estrazione dei master data da un file Excel, creare automaticamente il database e popolarlo con i dati iniziali nel mio ambiente di test. Successivamente, vorrei anche generare in modo automatico le configurazioni necessarie basate sui dati estratti dal file Excel.
+Vorrei automatizzare l’attività ripetitiva di estrazione dei master data da un file Excel, creare automaticamente il database e
+popolarlo con i dati iniziali nel mio ambiente di test. Successivamente, vorrei anche generare in modo automatico le configurazioni 
+necessarie basate sui dati estratti dal file Excel.
 
 Function-call previsto:  
-    - Function-call che si occupa di leggere il file Excel da una determinata cartella e restituire i dati strutturati in un formato gestibile (es: JSON).  
-    - Function-call che crea in automatico un database.  
+    - Function-call che si occupa di leggere il file Excel da una determinata cartella e restituire i dati strutturati in JSON.  
+    - Function-call che crea in automatico un database utilizzando un file di DDL.  
     - Function-call che popola il database con i dati del json.  
-    - Function-call che genera file di configurazione a partire dai dati presenti nel json precedentemente generato.
+    - Function-call che genera file di configurazione utilizzando i dati del json.
 
 Prompt previsto:
-"Sono uno sviluppatore esperto di java e conosco le differenze tra le varie versioni di java. Mi occupo di consigliare le modifiche più opportune per migrare da una versione ad un'altra."
+Sono un DBA esperto (SQL Server), esperto in configurazione di ambienti
 
 Esempio domanda:
-Prevedo questo tipo di domande:  
-"Esaminando il file excel `<nome file>`, crea un nuovo file json estraendo le informazioni x e strutturandole in questo modo: [struttura json]."
+Esaminando il file excel [path file], crea un nuovo file json estraendo le informazioni x e strutturandole in questo modo: [struttura json]. 
+Crea un db utilizzando questo schema [path_schema] in questo db server [ip_db_server], successivamente fai un bulk insert dei master.
+Infine genera il file di configurazione strutturato in questo modo [struttura file di config] 
