@@ -1,0 +1,15 @@
+Descrizione:  
+Vorrei automatizzare l’attività ripetitiva di estrazione dei master data da un file Excel, creare automaticamente il database e popolarlo con i dati iniziali nel mio ambiente di test. Successivamente, vorrei anche generare in modo automatico le configurazioni necessarie basate sui dati estratti dal file Excel.
+
+Function-call previsto:  
+    - Function-call che si occupa di leggere il file Excel da una determinata cartella e restituire i dati strutturati in un formato gestibile (es: JSON).  
+    - Function-call che crea in automatico un database.  
+    - Function-call che popola il database con i dati del json.  
+    - Function-call che genera file di configurazione a partire dai dati presenti nel json precedentemente generato.
+
+Prompt previsto:
+"Sono uno sviluppatore esperto di java e conosco le differenze tra le varie versioni di java. Mi occupo di consigliare le modifiche più opportune per migrare da una versione ad un'altra."
+
+Esempio domanda:
+Prevedo questo tipo di domande:  
+"Esaminando il file excel `<nome file>`, crea un nuovo file json estraendo le informazioni x e strutturandole in questo modo: [struttura json]."
