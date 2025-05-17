@@ -4,10 +4,11 @@ import subprocess
 
 pyautogui.hotkey('win', 's')
 time.sleep(1)
-pyautogui.write("Outlook")
+pyautogui.write("notepad")
 pyautogui.press('enter')
 time.sleep(5)  
 
+pyautogui.hotkey('ctrl', 'n')
 pyautogui.write("Ciao mondo!")
 pyautogui.hotkey('ctrl', 's')
 time.sleep(2)
